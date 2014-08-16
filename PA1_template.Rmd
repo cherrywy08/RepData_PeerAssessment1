@@ -74,7 +74,7 @@ activityData2 <- rbind(stepHasValue, stepMiss)
 Make a histogram of the total number of steps taken each day with missing value filled in. 
 ```{r histTotalPerDay}
 totalStepPerDay2 <- with(activityData2, tapply(steps, date, sum))
-hist(totalStepPerDay2)
+hist(totalStepPerDay2, main = "Histogram of Total Number of Steps Taken Per Day \n(with Missing Value Filled In)", xlab = "Total Step Per Day")
 ```
 
 Calculate and report the mean and median total number of steps taken per day.

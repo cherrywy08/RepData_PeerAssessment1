@@ -87,7 +87,7 @@ Make a histogram of the total number of steps taken each day with missing value 
 
 ```r
 totalStepPerDay2 <- with(activityData2, tapply(steps, date, sum))
-hist(totalStepPerDay2)
+hist(totalStepPerDay2, main = "Histogram of Total Number of Steps Taken Per Day \n(with Missing Value Filled In)", xlab = "Total Step Per Day")
 ```
 
 ![plot of chunk histTotalPerDay](figure/histTotalPerDay.png) 
